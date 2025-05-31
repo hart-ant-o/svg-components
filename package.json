@@ -1,0 +1,25 @@
+{
+  "name": "svg-components",
+  "version": "1.0.0",
+  "description": "CLI untuk meng-copy komponen SVG sebagai React Component",
+  "bin": {
+    "svg-components": "dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/cli.ts --format esm --target node18 --out-dir dist",
+    "dev": "ts-node src/cli.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "fs-extra": "^11.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
